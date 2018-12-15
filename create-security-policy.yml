@@ -3,13 +3,6 @@
   connection: local
   gather_facts: False
 
-
-
-  tasks:
-    - name: include variables (free-form)
-      include_vars: vars.yml
-      no_log: 'yes'
-      
     - name: add a rule to allow HTTP
       panos_security_rule:
         ip_address: "{{ mgmt_ip }}"
