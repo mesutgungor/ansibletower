@@ -43,7 +43,6 @@
         operation: 'add'
         rule_name: 'SSH 221 traffic'
         application: ['ping','ssh']
-        service: 'service-tcp-221'
         description: 'Allow SSH traffic'
         source_zone: ['untrust']
         destination_zone: ['trust']
