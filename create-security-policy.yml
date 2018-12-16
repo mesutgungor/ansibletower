@@ -12,7 +12,7 @@
         ip_address: "{{ mgmt_ip }}"
         username: "{{ admin_username }}"
         password: "{{admin_password}}"
-        operation: 'update'
+        operation: 'add'
         rule_name: 'Web traffic 2'
         application: 'web-browsing'
         description: 'Allow HTTP traffic updated'
