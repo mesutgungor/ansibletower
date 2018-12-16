@@ -12,10 +12,10 @@
         ip_address: "{{ mgmt_ip }}"
         username: "{{ admin_username }}"
         password: "{{admin_password}}"
-        operation: 'add'
-        rule_name: 'Web traffic 1'
+        operation: 'update'
+        rule_name: 'Web traffic 2'
         application: 'web-browsing'
-        description: 'Allow HTTP traffic'
+        description: 'Allow HTTP traffic updated'
         source_zone: ['untrust']
         destination_zone: ['trust']
         action: 'allow'
