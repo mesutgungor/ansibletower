@@ -3,6 +3,7 @@
   connection: local
   gather_facts: False
 
+  tasks:
     - name: add a rule to allow HTTP
       panos_security_rule:
         ip_address: "{{ mgmt_ip }}"
