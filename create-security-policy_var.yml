@@ -1,0 +1,22 @@
+---
+- hosts: firewalls
+  connection: local
+  gather_facts: False
+
+  roles:
+    - role: PaloAltoNetworks.paloaltonetworks
+
+  tasks:
+    - name: add a rule to allow HTTP
+      panos_security_rule:
+        ip_address: "51.144.84.110"
+        username: "network"
+        password: "Buralarfena123"
+        operation: 'add'
+        rule_name: "{{ rule_name }}"
+        application: "{{ application }}"
+        description: "{{ description }}"
+        source_zone: ['untrust']
+        destination_zone: ['trust']
+        action: 'allow'
+        commit: "False"
