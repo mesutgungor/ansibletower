@@ -9,7 +9,7 @@
   tasks:
     - name: add a rule to allow HTTP
       panos_security_rule:
-        ip_address: "51.144.84.110"
+        ip_address: "xx.yy.zz.tt"
         username: "network"
         password: "xxxxxx"
         operation: 'add'
