@@ -11,7 +11,7 @@
       panos_security_rule:
         ip_address: "51.144.84.110"
         username: "network"
-        password: "Buralarfena123"
+        password: "xxxxxx"
         operation: 'add'
         rule_name: "{{ rule_name }}"
         application: "{{ application }}"
