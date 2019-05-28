@@ -7,7 +7,7 @@
     - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
-    - name: add a rule to allow HTTP
+    - name: add a rule to allow HTTPp
       panos_security_rule:
         ip_address: "xx.yy.zz.tt"
         username: "network"
