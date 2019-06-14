@@ -1,5 +1,5 @@
 ---
-- hosts: firewalls
+- hosts: palo
   connection: local
   gather_facts: False
 
@@ -13,7 +13,7 @@
         username: "{{ admin_username }}"
         password: "{{admin_password}}"
         operation: 'add'
-        rule_name: 'Web traffic 2'
+        rule_name: 'Web traffic 1'
         application: 'web-browsing'
         description: 'Allow HTTP traffic updated'
         source_zone: ['untrust']
