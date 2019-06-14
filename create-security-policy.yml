@@ -12,7 +12,7 @@
         ip_address: "{{ mgmt_ip }}"
         username: "{{ admin_username }}"
         password: "{{admin_password}}"
-        operation: 'add'
+        state: 'add'
         rule_name: 'Web traffic 1'
         application: 'web-browsing'
         description: 'Allow HTTP traffic updated'
@@ -26,7 +26,7 @@
         ip_address: "{{ mgmt_ip }}"
         username: "{{ admin_username }}"
         password: "{{admin_password}}"
-        operation: 'add'
+        state: 'add'
         rule_name: 'SSH traffic 1'
         application: ['ping','ssh']
         description: 'Allow SSH traffic'
