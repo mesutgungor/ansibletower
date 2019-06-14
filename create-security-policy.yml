@@ -7,7 +7,7 @@
     - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
-    - name: add a rule to allow HTTP
+    - name: add a rule to afllow HTTP
       panos_security_rule:
         ip_address: "{{ mgmt_ip }}"
         username: "{{ admin_username }}"
