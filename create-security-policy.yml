@@ -7,14 +7,14 @@
     - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
-    - name: Add test rule 1 to the firewall
+    - name: fAdd test rule 1 to the firewall
       panos_security_rule:
           provider: 
            username : "{{admin_username}}"
            password : "{{admin_username}}"
            ip_address : "{{mgmt_ip}}"
            api_key : "{{api_key}}"
-          rule_name: 'Ansible test 1'
+          rule_name: 'Ansible test 2'
           description: 'An Ansible test rule'
           source_zone: ['any']
           destination_zone: ['any']
@@ -27,5 +27,3 @@
           hip_profiles: ['any']
           action: 'allow'
           commit: 'True'
-
-    
