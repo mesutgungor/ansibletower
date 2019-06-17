@@ -8,7 +8,7 @@
 
   tasks:
     - name: Add test rule 1 to the firewall
-        panos_security_rule:
+      panos_security_rule:
           provider: '{{ provider }}'
           rule_name: 'Ansible test 1'
           description: 'An Ansible test rule'
