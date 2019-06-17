@@ -18,9 +18,9 @@
           description: 'An Ansible test rule'
           source_zone: ['any']
           destination_zone: ['any']
-          source_ip: ['1.2.3.4']
+          source_ip: ['1.2.3.4','2.3.4.5']
           source_user: ['any']
-          destination_ip: ['any']
+          destination_ip: ['any'] 
           category: ['any']
           application: ['any']
           service: ['service-http']
