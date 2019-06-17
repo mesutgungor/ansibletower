@@ -4,7 +4,7 @@
   gather_facts: False
 
   roles:
-    - role: Paloaltonetworks.paloaltonetworks
+    - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
     - name: Add test rule 1 to the firewall
