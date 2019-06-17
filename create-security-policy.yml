@@ -25,5 +25,5 @@
           application: ['any']
           service: ['service-http']
           hip_profiles: ['any']
-          action: 'allow'
+          action: "{{action_verb}}"
           commit: 'True'
