@@ -14,7 +14,7 @@
            password : "{{admin_username}}"
            ip_address : "{{mgmt_ip}}"
            api_key : "{{api_key}}"
-          rule_name: 'Ansible test 2'
+          rule_name: "{{rule_name}}"
           description: 'An Ansible test rule'
           source_zone: ['any']
           destination_zone: ['any']
