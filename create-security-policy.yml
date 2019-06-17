@@ -16,8 +16,8 @@
            api_key : "{{api_key}}"
           rule_name: 'Ansible test 1'
           description: 'An Ansible test rule'
-          source_zone: ['internal']
-          destination_zone: ['external']
+          source_zone: ['any']
+          destination_zone: ['any']
           source_ip: ['1.2.3.4']
           source_user: ['any']
           destination_ip: ['any']
