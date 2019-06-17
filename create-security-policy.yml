@@ -9,7 +9,10 @@
   tasks:
     - name: Add test rule 1 to the firewall
       panos_security_rule:
-          provider: '{{ provider }}'
+          provider: 
+           username : {{admin_username}}
+           password : {{admin_username}}
+           ip_address : {{mgmt_ip}}
           rule_name: 'Ansible test 1'
           description: 'An Ansible test rule'
           source_zone: ['internal']
