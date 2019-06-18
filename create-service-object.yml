@@ -8,7 +8,7 @@
   
   tasks:
     - name: Create Service service-tcp-221
-        panos_service_object:
+      panos_service_object:
         provider: 
            username : "{{admin_username}}"
            password : "{{admin_username}}"
