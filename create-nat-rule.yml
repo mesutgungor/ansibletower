@@ -15,8 +15,8 @@
            ip_address : "{{mgmt_ip}}"
            api_key : "{{api_key}}"
        rule_name: "{{rule_name}}"
-       source_zone: ["external"]
-       destination_zone: "external"
+       source_zone: ["Untrust"]
+       destination_zone: "Untrust"
        source: ["any"]
        destination: ["10.0.0.100"]
        service: "service-tcp-221"
