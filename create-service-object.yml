@@ -18,6 +18,7 @@
         name: 'Prod'
         color: 'red'
         comments: 'Prod Environment'  
+        commit:"Yes"
     
     - name: Create Service service-tcp-221
       panos_service_object:
@@ -30,3 +31,4 @@
         destination_port: '22'
         description: 'service-tcp-221'
         tag: ['Prod']
+        commit:"Yes"
