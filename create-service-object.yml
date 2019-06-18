@@ -10,7 +10,11 @@
   
     - name: Create tag object 'Prod'
       panos_tag_object:
-        provider: '{{ provider }}'
+        provider: 
+           username : "{{admin_username}}"
+           password : "{{admin_username}}"
+           ip_address : "{{mgmt_ip}}"
+           api_key : "{{api_key}}"
         name: 'Prod'
         color: 'red'
         comments: 'Prod Environment'  
