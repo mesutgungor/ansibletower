@@ -24,3 +24,4 @@
        snat_interface: "ethernet1/2"
        dnat_address: "10.0.1.101"
        dnat_port: "22"
+       commit:"Yes"
