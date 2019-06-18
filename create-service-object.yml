@@ -14,7 +14,7 @@
            password : "{{admin_username}}"
            ip_address : "{{mgmt_ip}}"
            api_key : "{{api_key}}"
-       name: 'service-tcp-221'
-       destination_port: '22'
-       description: 'service-tcp-221'
-       tag: ['Prod']
+        name: 'service-tcp-221'
+        destination_port: '22'
+        description: 'service-tcp-221'
+        tag: ['Prod']
