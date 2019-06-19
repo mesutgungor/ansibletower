@@ -7,7 +7,7 @@
     - role: PaloAltoNetworks.paloaltonetworks
 
   tasks:
-    - name: fAdd test rule 1 to the firewall
+    - name: Add test ruli to the firewall
       panos_security_rule:
           provider: 
            username : "{{admin_username}}"
@@ -23,5 +23,5 @@
           hip_profiles: ['any']
           action: "allow"
       with_items:
-        - { rule_name: "Prod SSH Inbound", destination_ip: ['4.4.4.4'], application: ['ssh'], tag: ['Prod'], description: 'Rule 1 Description'}
-        - { rule_name: "SI Inbound", destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], tag: ['Prod'], description: 'Rule 2 Description'}	   
+        - { rule_name: 'Prod SSH Inbound', destination_ip: ['4.4.4.4'], application: ['ssh'], tag: ['Prod'], description: 'Rule 1 Description'}
+        - { rule_name: 'SI Inbound', destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], tag: ['Prod'], description: 'Rule 2 Description'}	   
