@@ -27,5 +27,5 @@
           application: '{{ item.application }}'
           description: '{{ item.description }}'
       with_items:
-        - { rule_name: 'Prod SSH Inbound', destination_ip: ['4.4.4.4'], application: ['ssh'], description: 'Rule 1 Description'}
-        - { rule_name: 'SI Inbound', destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], description: 'Rule 2 Description'}	   
+        - { rule_name: 'Prod SSH Inbound', destination_ip: ['4.4.4.4'], application: ['ssh'], description: 'Rule 1 Description', commit: 'Yes'}
+        - { rule_name: 'SI Inbound', destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], description: 'Rule 2 Description', commit: 'Yes'}	   
