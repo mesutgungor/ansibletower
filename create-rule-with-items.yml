@@ -25,8 +25,7 @@
           rule_name: '{{ item.rule_name }}'
           destination_ip: '{{ item.destination_ip }}'
           application: '{{ item.application }}'
-          tag: '{{ item.tag }}'
           description: '{{ item.description }}'
       with_items:
-        - { rule_name: 'Prod SSH Inbound', destination_ip: ['4.4.4.4'], application: ['ssh'], tag: ['Prod'], description: 'Rule 1 Description'}
-        - { rule_name: 'SI Inbound', destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], tag: ['Prod'], description: 'Rule 2 Description'}	   
+        - { rule_name: 'Prod SSH Inbound', destination_ip: ['4.4.4.4'], application: ['ssh'], description: 'Rule 1 Description'}
+        - { rule_name: 'SI Inbound', destination_ip: ['4.4.4.4'], application: ['ssh', 'mysql'], description: 'Rule 2 Description'}	   
